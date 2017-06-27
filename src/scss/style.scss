@@ -5,16 +5,6 @@ $centrar: center;
 $alto-encabezado: 60px;
 $padding-encabezado: 10px 20px;
 $padding-lista: 10px 40px;
-$break-small: 320px;
-$break-medium: 720px;
-$break-large: 1200px;
-$column: 8.333%;
-
-@mixin grid ($columns) {
-  width: $column * ($columns);
-  padding-bottom: 12px;
-
-}
 
 * {
   box-sizing: border-box;
@@ -35,6 +25,58 @@ $column: 8.333%;
 
 .row::after {
   clear: both;
+}
+
+
+[class*="col-"] {
+  min-height: 8px;
+  padding: 12px;
+  float: left;
+}
+
+.col-1 {
+  /* (1/12)*100 */
+  width: 8.333%;
+}
+
+.col-2 {
+  /* (2/12)*100 */
+  width: 16.666%;
+}
+
+.col-3 {
+  /* (3/12)*100 */
+  width: 25%;
+}
+
+.col-4 {
+  /* (4/12)*100 */
+  width: 33.333%;
+}
+
+.col-5 {
+  /* (5/12)*100 */
+  width: 41.666%;
+}
+
+.col-6 {
+  /* (6/12)*100 */
+  width: 50%;
+}
+
+.col-7 {
+  /* (7/12)*100 */
+  width: 58.333%;
+}
+
+.col-8 {
+  /* (8/12)*100 */
+  width: 66.666%;
+}
+
+.col-12 {
+  /* (12/12)*100 */
+  width: 100%;
 }
 
 h1{
