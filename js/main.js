@@ -21,7 +21,7 @@ var crearLista = function(alumna){
 
   listaAlumna.text(nombreAlumna + " " + apellidoPaterno + " " +apellidoMaterno);
 
-  $("#aqui").append(listaAlumna);
+  $("ol").append(listaAlumna);
 
 }
 

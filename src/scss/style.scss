@@ -1,6 +1,89 @@
 $amarilloLab: rgb(247, 182, 23);
 $grisLab: rgb(43, 43, 43);
+$letrasBlancas: white;
+$centrar: center;
+$alto-encabezado: 60px;
+$padding-encabezado: 10px 20px;
+$padding-lista: 10px 40px;
+$break-small: 320px;
+$break-medium: 720px;
+$break-large: 1200px;
+$column: 8.333%;
+
+@mixin grid ($columns) {
+  width: $column * ($columns);
+  padding-bottom: 12px;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row::before, .row::after {
+  content: " ";
+  display: table;
+}
+
+.row::after {
+  clear: both;
+}
 
 h1{
   background: $amarilloLab;
+  height: $alto-encabezado;
+  color: $letrasBlancas;
+  padding: $padding-encabezado;
+}
+
+.barra-izq{
+  background: $grisLab;
+  color: $letrasBlancas;
+  padding: $padding-encabezado;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.ejercicio{
+  background: $amarilloLab;
+  color: $letrasBlancas;
+  padding: $padding-encabezado;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.aside{
+  background: $grisLab;
+  color: $letrasBlancas;
+  text-align: $centrar;
+  margin: 20px;
+  h2, p{
+    padding: $padding-encabezado;
+  }
+}
+
+.nombres{
+  h1{
+    background: $letrasBlancas;
+    color: black;
+  }
+  h4, ol{
+    padding: $padding-lista;
+  }
+}
+
+.final{
+  padding: $padding-encabezado;
+  height: 50px;
+  background: $grisLab;
+  color: $letrasBlancas;
+  text-align: $centrar;
 }
