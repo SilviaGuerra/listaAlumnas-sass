@@ -91,7 +91,7 @@ h1{
   color: $letrasBlancas;
   padding: $padding-encabezado;
   list-style-type: none;
-  margin: 10px;
+
 }
 
 .ejercicio{
@@ -99,14 +99,12 @@ h1{
   color: $letrasBlancas;
   padding: $padding-encabezado;
   list-style-type: none;
-  margin: 10px;
 }
 
 .aside{
   background: $grisLab;
   color: $letrasBlancas;
   text-align: $centrar;
-  margin: 20px;
   h2, p{
     padding: $padding-encabezado;
   }
@@ -124,8 +122,8 @@ h1{
 
 .final{
   padding: $padding-encabezado;
-  height: 50px;
   background: $grisLab;
   color: $letrasBlancas;
   text-align: $centrar;
+  clear: both;
 }
